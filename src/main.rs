@@ -5,10 +5,9 @@ use raytracer::camera::{Camera, CameraConfig};
 use raytracer::color::Color;
 use raytracer::hittable::HittableList;
 use raytracer::hittable::sphere::Sphere;
-use raytracer::materials::dielectric::{Dielectric, DielectricConfig};
-use raytracer::materials::lambertian::LambertianConfig;
-use raytracer::materials::metal::MetalConfig;
-use raytracer::materials::{lambertian::Lambertian, metal::Metal};
+use raytracer::materials::{Dielectric, DielectricConfig};
+use raytracer::materials::{Lambertian, LambertianConfig};
+use raytracer::materials::{Metal, MetalConfig};
 use raytracer::math::{Point3, rand, rand_rng};
 use raytracer::{App, Buffer};
 use std::rc::Rc;
@@ -27,8 +26,8 @@ fn main() {
         image_width: WIDTH as u32,
         image_height: HEIGHT as u32,
         aspect_ratio: ASPECT_RATIO,
-        samples_per_pixel: 100,
-        max_ray_depth: 10,
+        samples_per_pixel: 3000,
+        max_ray_depth: 300,
         light_intensity: 0.95,
         sky_color: Color::new(0.5, 0.7, 1.0),
 

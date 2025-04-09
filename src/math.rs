@@ -14,7 +14,7 @@ pub type Point3 = Vec3A;
 
 thread_local! {
     static RNG: std::cell::RefCell<Xoshiro256Plus> =
-        std::cell::RefCell::new(Xoshiro256Plus::seed_from_u64(42));
+        std::cell::RefCell::new(Xoshiro256Plus::seed_from_u64(9));
 }
 
 #[inline]
