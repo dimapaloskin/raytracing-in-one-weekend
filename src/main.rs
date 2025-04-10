@@ -26,8 +26,8 @@ fn main() {
         image_width: WIDTH as u32,
         image_height: HEIGHT as u32,
         aspect_ratio: ASPECT_RATIO,
-        samples_per_pixel: 3000,
-        max_ray_depth: 300,
+        samples_per_pixel: 100,
+        max_ray_depth: 50,
         light_intensity: 0.95,
         sky_color: Color::new(0.5, 0.7, 1.0),
 
